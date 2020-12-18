@@ -9,9 +9,10 @@ namespace PierresVendors.Test
   public class VendorTests
   {
     [TestMethod]
-    public void Vendor_Action_Return()
+    public void Vendor_CreatesInstanceOfVendor_Vendor()
     {
-      
+      Vendor newVendor = new Vendor("testArgument2");
+      Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
   }
  
