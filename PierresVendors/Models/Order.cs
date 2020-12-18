@@ -4,7 +4,7 @@ namespace PierresVendors.Models
 {
   public class Order
   {
-   public string Title { get; set ; }
+   public string Title { get; set; }
    public string OrderDescription { get; set ; }
    public string Price { get; set ; }
    public string Date { get; set ; }
