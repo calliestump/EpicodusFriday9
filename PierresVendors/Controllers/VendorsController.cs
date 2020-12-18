@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
-using PierresVendors.Models;
+using PierresVendor.Models;
 using System.Collections.Generic;
 
-namespace PierresVendors.Controllers
+namespace PierresVendor.Controllers
 {
-  public class VendorController : Controller
+  public class VendorsController : Controller
   {
     [HttpGet("/vendors")]
     public ActionResult Index()

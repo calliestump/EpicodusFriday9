@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace PierresVendors.Models
+namespace PierresVendor.Models
 {
   public class Vendor
   {
