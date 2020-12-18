@@ -51,5 +51,18 @@ namespace PierresVendors.Test
       List<Vendor> testResult = Vendor.GetAll();
       CollectionAssert.AreEqual(newVendor, testResult);
     }
+
+    [TestMethod]
+    public void Find_RetrunsCorrectVendorById_Vendor()
+    {
+      string vendorName1 = "Haylee's Cafe";
+      string vendorDescription1 = "Haylee's cafe is known for their delicous coffee, sandwhiches, baked goods and modern decor.";
+      Vendor newVendor1 = new Vendor (vendorName1, vendorDescription1);
+      string vendorName2 = "Mabelys's Cafe";
+      string vendorDescription2 = "Mabelys's cafe is known for their delicous smoothies, fruits, organic baked goods and graphic illustration.";
+      Vendor newVendor2 = new Vendor (vendorName2, vendorDescription2);
+      Vendor testResult = Vendor.Find(1);
+      Assert.AreEqual(newVendor2, testResult);
+    }
   }
 }
