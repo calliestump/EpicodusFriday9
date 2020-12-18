@@ -1,19 +1,19 @@
-# Title
+# Pierres Vendor Organizer
 
-#### **Date**
+#### **12/18/2020**
 
 ## By _Callie Stump_
 ---
 ## 🚩 **Description**
-
+This is a webpage made for organzing Pierres Bakery vendors. The webpage allows Pierre to log all vendors affiliated with the company, as well as the orders that are in place.
 
 ## 🔧 **Setup/Installation Requirements**
 #### The Technologies listed above are required to run this program.
-1. Copy this download link: TODO
+1. Copy this download link: https://github.com/calliestump/EpicodusFriday9.git
 2. Open bash and go to the directory where you would like to store your cloned project.
 3. Clone the repo.
 ```
-git clone TODO
+git clone https://github.com/calliestump/EpicodusFriday9.git
 ```
 4. Navigate to the cloned project folder and open VS code.
 ```
@@ -46,34 +46,15 @@ git remote add origin [personal Github repo. link]
 * C# V:7.3
 * .NET Core V:2.2
 * dotnet script, REPL
+* Razor View Engine
+* ASP.NET Core MVC
+* RESTful Routing, CRUD, & HTTP
+* Bootstrap Library
+* CSHTML
+
 
 ## 🐛 Known Bugs
-
-## **Specs**
-
-<details>
-<summary>Expand Specs</summary>
-<table>
-  <tr>
-    <th>Test</th>
-    <th>Input</th>
-    <th>Output</th>
-    <th>Completed</th>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>    
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-</table>  
-</details>
+There are no known bugs at this time.
 
 ## Legal
 Copyright (c) 2020 Callie Stump
