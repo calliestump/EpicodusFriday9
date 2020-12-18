@@ -9,9 +9,10 @@ namespace PierresVendors.Test
   public class OrderTests
   {
     [TestMethod]
-    public void Order_Action_Return()
+    public void OrderConstructor_CreatesOrderInstance_Return()
     {
-      
+      Order newOrder = new Order("this", "is", "a");
+      Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
   }
  

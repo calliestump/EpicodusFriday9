@@ -25,7 +25,7 @@ namespace PierresVendors.Test
       string vendorDescription = "Haylee's cafe is known for their delicous coffee, sandwhiches, baked goods and modern decor.";
       Vendor newVendor = new Vendor (vendorName, vendorDescription);
       string vendorNameTest = newVendor.Name;
-      string vendorDescriptionTest = newVendor.Description;
+      string vendorDescriptionTest = newVendor.VendorDescription;
       Assert.AreEqual(vendorName, vendorNameTest);
       Assert.AreEqual(vendorDescription, vendorDescriptionTest);
     }
@@ -64,5 +64,10 @@ namespace PierresVendors.Test
       Vendor testResult = Vendor.Find(1);
       Assert.AreEqual(newVendor1, testResult);
     }
+    // [TestMethod]
+    // public void AddOrderToVendor_PassesOrderObjectIntoVendorObject_Order()
+    // {
+
+    // }
   }
 }
