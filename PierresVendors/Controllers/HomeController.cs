@@ -9,6 +9,6 @@ namespace PierresVendors.Controllers
     public ActionResult Index()
     {
       return View();
-    }
+    } 
   }
 }

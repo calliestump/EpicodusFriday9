@@ -5,14 +5,14 @@ namespace PierresVendors.Models
   public class Vendor
   {
    private static List<Vendor> _instances = new List<Vendor> {};
-   public string Name { get; set; }
+   public string VendorName { get; set; }
    public string VendorDescription { get; set; }
    public int Id { get; }
    public List<Order> Orders { get; set ; }
 
    public Vendor(string vendorName, string vendorDescription)
    {
-     Name = vendorName;
+     VendorName = vendorName;
      VendorDescription = vendorDescription;
      _instances.Add(this);
      Id = _instances.Count;
@@ -30,10 +30,9 @@ namespace PierresVendors.Models
    {
      return _instances[searchId-1];
    }
-  //  public void AddOrder(Order title, Order description, Order price, Order date)
-  //  {
-  //    Orders.Add(title, description, price, date);
-  //  }
+   public void AddOrder(Order order)
+    {
+      Orders.Add(order);
+    }
   }
-
 }

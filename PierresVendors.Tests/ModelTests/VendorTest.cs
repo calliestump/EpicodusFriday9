@@ -24,7 +24,7 @@ namespace PierresVendors.Test
       string vendorName = "Haylee's Cafe";
       string vendorDescription = "Haylee's cafe is known for their delicous coffee, sandwhiches, baked goods and modern decor.";
       Vendor newVendor = new Vendor (vendorName, vendorDescription);
-      string vendorNameTest = newVendor.Name;
+      string vendorNameTest = newVendor.VendorName;
       string vendorDescriptionTest = newVendor.VendorDescription;
       Assert.AreEqual(vendorName, vendorNameTest);
       Assert.AreEqual(vendorDescription, vendorDescriptionTest);
@@ -64,10 +64,19 @@ namespace PierresVendors.Test
       Vendor testResult = Vendor.Find(1);
       Assert.AreEqual(newVendor1, testResult);
     }
-    // [TestMethod]
-    // public void AddOrderToVendor_PassesOrderObjectIntoVendorObject_Order()
-    // {
-
-    // }
+    [TestMethod]
+    public void AddOrderToVendor_PassesOrderObjectIntoVendorObject_Order()
+    {
+      string orderTitle = "title";
+      string orderDescription = "description";
+      string orderPrice = "price";
+      string orderDate = "date";
+      Order newOrder = new Order(orderTitle, orderDescription, orderPrice, orderDate);
+      List<Order> newList = new List<Order> { newOrder };
+      string vendorName = "Haylee's Cafe";
+      string vendorDescription = "Haylee's cafe is known for their delicous coffee, sandwhiches, baked goods and modern decor.";
+      Vendor newVendor = new Vendor (vendorName, vendorDescription);
+      newVendor.AddOrder(newOrder);
+    }
   }
 }
