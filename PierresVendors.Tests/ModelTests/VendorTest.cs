@@ -6,9 +6,12 @@ using System;
 namespace PierresVendors.Test
 {
   [TestClass]
-  public class VendorTests
+  public class VendorTests : IDisposable
   {
-    
+    public void Dispose() 
+    {
+      Vendor.ClearAll();
+    }
     [TestMethod]
     public void Vendor_CreatesInstanceOfVendor_Vendor()
     {
