@@ -1,15 +1,15 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-//using ProjectName.Models
+using PierresVendors.Models;
 using System;
 
-namespace ProjectName.Test
+namespace PierresVendors.Test
 {
   [TestClass]
-  public class ClassTests
+  public class OrderTests
   {
     [TestMethod]
-    public void Class_Action_Return()
+    public void Order_Action_Return()
     {
       
     }
