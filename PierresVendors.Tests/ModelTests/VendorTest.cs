@@ -8,6 +8,7 @@ namespace PierresVendors.Test
   [TestClass]
   public class VendorTests
   {
+    
     [TestMethod]
     public void Vendor_CreatesInstanceOfVendor_Vendor()
     {
@@ -24,6 +25,15 @@ namespace PierresVendors.Test
       string vendorDescriptionTest = newVendor.Description;
       Assert.AreEqual(vendorName, vendorNameTest);
       Assert.AreEqual(vendorDescription, vendorDescriptionTest);
+    }
+    [TestMethod]
+    public void RetrunId_VendorId_Int()
+    {
+      string vendorName = "Haylee's Cafe";
+      string vendorDescription = "Haylee's cafe is known for their delicous coffee, sandwhiches, baked goods and modern decor.";
+      Vendor newVendor = new Vendor (vendorName, vendorDescription);
+      int idResult = newVendor.Id;
+      Assert.AreEqual(1, idResult);
     }
   }
 }
