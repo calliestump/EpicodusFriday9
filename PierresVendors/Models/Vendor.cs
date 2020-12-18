@@ -22,5 +22,6 @@ namespace PierresVendors.Models
    {
      _instances.Clear();
    }
+   
   }
 }
