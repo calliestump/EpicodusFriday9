@@ -1,6 +1,16 @@
+@using PierresVendor.Models;
 @{
   Layout = "_Layout";
 }
 <div class = "container">
- 
+  <h3>Welcome to Vendors Orders Show Page</h3>
+  <ol>
+    @foreach (Order order in @Model["orders"])
+    {
+      <li><a href='vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></li>
+    }
+  </ol>
+  <p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new order for this Vendor</a></p>
+  <p><a href='/vendors'>Back to list of Vendors</a></p>
+  <p><a href ='/'>Back Home</a></p>
 </div>

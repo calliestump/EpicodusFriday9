@@ -8,9 +8,11 @@
  {
    <h3>No vendors have been added.</h3>
  }
+
  @foreach (Vendor vendor in Model)
  {
    <h3><a href = "/vendors/@vendor.Id">@vendor.VendorName</a></h3>
  }
  <p><a href="/">Back Home</a></p>
+ <p><a href='/vendors/new'>Add a vendor</a></p>
 </div>
