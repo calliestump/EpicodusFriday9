@@ -31,6 +31,17 @@ namespace PierresVendors.Test
       Assert.AreEqual(orderPrice, orderPriceTest);
       Assert.AreEqual(orderDate, orderDateTest);
     }
+    [TestMethod]
+    public void ReturnId_OrderId_Int()
+    {
+      string orderTitle = "title";
+      string orderDescription = "description";
+      string orderPrice = "price";
+      string orderDate = "date";
+      Order newOrder = new Order(orderTitle, orderDescription, orderPrice, orderDate);
+      int idResult = newOrder.Id;
+      Assert.AreEqual(1, idResult);
+    }
   }
  
 }
