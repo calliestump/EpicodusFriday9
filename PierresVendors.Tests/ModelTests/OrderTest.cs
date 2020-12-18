@@ -55,14 +55,30 @@ namespace PierresVendors.Test
       string orderPrice1 = "price";
       string orderDate1 = "date";
       Order newOrder1 = new Order(orderTitle1, orderDescription1, orderPrice1, orderDate1);
-      string orderTitle2 = "title";
-      string orderDescription2 = "description";
-      string orderPrice2 = "price";
-      string orderDate2 = "date";
+      string orderTitle2 = "title2";
+      string orderDescription2 = "description2";
+      string orderPrice2 = "price2";
+      string orderDate2 = "date2";
       Order newOrder2 = new Order(orderTitle2, orderDescription2, orderPrice2, orderDate2);
       List<Order> newList = new List<Order> { newOrder1, newOrder2 };
       List<Order> testResult = Order.GetAll();
       CollectionAssert.AreEqual(newList, testResult);
+    }
+    [TestMethod]
+    public void Find_FindCorrectIdForOrderInstance_Order()
+    {
+      string orderTitle1 = "title";
+      string orderDescription1 = "description";
+      string orderPrice1 = "price";
+      string orderDate1 = "date";
+      Order newOrder1 = new Order(orderTitle1, orderDescription1, orderPrice1, orderDate1);
+      string orderTitle2 = "title2";
+      string orderDescription2 = "description2";
+      string orderPrice2 = "price2";
+      string orderDate2 = "date2";
+      Order newOrder2 = new Order(orderTitle2, orderDescription2, orderPrice2, orderDate2);
+      Order testResult = Order.Find(2);
+      Assert.AreEqual(newOrder2, testResult);
     }
   }
  
