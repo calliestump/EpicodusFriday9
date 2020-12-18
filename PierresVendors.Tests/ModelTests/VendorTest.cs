@@ -19,7 +19,7 @@ namespace PierresVendors.Test
     {
       string vendorName = "Haylee's Cafe";
       string vendorDescription = "Haylee's cafe is known for their delicous coffee, sandwhiches, baked goods and modern decor.";
-      Vendor newVendor = new Vendor ();
+      Vendor newVendor = new Vendor (vendorName, vendorDescription);
       string vendorNameTest = newVendor.Name;
       string vendorDescriptionTest = newVendor.Description;
       Assert.AreEqual(vendorName, vendorNameTest);
