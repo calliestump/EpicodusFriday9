@@ -21,7 +21,7 @@ namespace PierresVendors.Test
       string orderDescription = "description";
       string orderPrice = "price";
       string orderDate = "date";
-      Order newOrder = new Order(orderDescription, orderPrice, orderDate);
+      Order newOrder = new Order(orderTitle, orderDescription, orderPrice, orderDate);
       string orderTitleTest = newOrder.Title;
       string orderDescriptionTest = newOrder.OrderDescription;
       string orderPriceTest = newOrder.Price;
