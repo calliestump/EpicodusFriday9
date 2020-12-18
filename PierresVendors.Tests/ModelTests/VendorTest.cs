@@ -62,7 +62,7 @@ namespace PierresVendors.Test
       string vendorDescription2 = "Mabelys's cafe is known for their delicous smoothies, fruits, organic baked goods and graphic illustration.";
       Vendor newVendor2 = new Vendor (vendorName2, vendorDescription2);
       Vendor testResult = Vendor.Find(1);
-      Assert.AreEqual(newVendor2, testResult);
+      Assert.AreEqual(newVendor1, testResult);
     }
   }
 }
