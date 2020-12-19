@@ -41,9 +41,9 @@ namespace PierresVendor.Controllers
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
       Vendor foundVendor = Vendor.Find(vendorId);
-      Order order = new Order(orderTitle, orderDescription, orderPrice, orderDate);
+      Order vendorOrder = new Order(orderTitle, orderDescription, orderPrice, orderDate);
       List<Order> vendorOrders = foundVendor.Orders;
-      model.Add("order", order);
+      model.Add("orders", vendorOrders);
       model.Add("vendor", foundVendor);
       return View("Show", model);
     }

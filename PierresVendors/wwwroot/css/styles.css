@@ -1,0 +1,16 @@
+body {
+  background-color:rgb(240, 221, 197);
+  text-align: center;
+}
+a {
+  color: rgb(165, 141, 110);
+}
+
+.container {
+  padding: 20px;
+  align-items: center;
+}
+
+.jumbotron {
+  padding: 80px;
+}
