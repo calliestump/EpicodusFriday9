@@ -4,7 +4,7 @@
 }
 <div class = "container">
   <div class = "jumbotron">
-    <h1>Pierres Vendors</h1>
+    <h1><ul><strong>Pierres Vendors</ul></strong></h1>
     @if (@Model.Count == 0)
     {
       <h3>Pierres Bakery currently doesn't have any Vendors.</h3>
@@ -12,9 +12,9 @@
 
     @foreach (Vendor vendor in Model)
     {
-      <h3><a href = "/vendors/@vendor.Id">@vendor.VendorName</a></h3>
+      <h2><a href = "/vendors/@vendor.Id">@vendor.VendorName</a></h2>
     }
-    <p><a href="/">Home Page</a></p>
+    <br><br><p><a href="/">Home Page</a></p>
     <p><a href='/vendors/new'>Add a Vendor to Pierres Bakery</a></p>
   </div>
 </div>
