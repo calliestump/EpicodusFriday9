@@ -5,11 +5,11 @@
   <div class = "jumbotron">
     <h1>Order Details for @Model["vendor"].VendorName</h1>
     <h2>@Model["order"].Title</h2>
-    <h2>@Model["order"].Description</h2>
+    <h2>@Model["order"].OrderDescription</h2>
     <h2>@Model["order"].Price</h2>
-    <h2>@Model["order"].Date</h2>
-    <a href='/vendors/@Model["vendor"].Id/orders/new'>Add another order for this Vendor</a>
-    <a href='/vendors'>View all vendor</a>
+    <h2>@Model["order"].Date</h2><br>
+    <p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add another order for @Model["vendor"].VendorName</a><br></p>
+    <p><a href='/vendors'>View all Vendors</a></p>
     </div>
 </div>
 

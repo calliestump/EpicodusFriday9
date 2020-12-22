@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
 using PierresVendor.Models;
+using System.Collections.Generic;
 
 namespace PierresVendor.Controllers
 {
@@ -12,7 +12,8 @@ namespace PierresVendor.Controllers
       Vendor vendor = Vendor.Find(vendorId);
       return View(vendor);
     }
-    [HttpGet("/vendors/{vendorId}/orders{orderId}")]
+
+    [HttpGet("/vendors/{vendorId}/orders/{orderId}")]
     public ActionResult Show(int vendorId, int orderId)
     {
       Order order = Order.Find(orderId);

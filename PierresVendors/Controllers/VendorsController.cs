@@ -36,7 +36,7 @@ namespace PierresVendor.Controllers
       model.Add("orders", vendorOrders);
       return View(model);
     }
-    [HttpGet("/vendors/{vendorId}/orders")]
+    [HttpPost("/vendors/{vendorId}/orders")]
     public ActionResult Create(int vendorId, string orderTitle, string orderDescription, string orderPrice, string orderDate)
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
