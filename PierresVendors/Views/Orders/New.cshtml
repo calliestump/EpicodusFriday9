@@ -3,7 +3,7 @@
 }
 <div class = "container">
   <div class = "jumbotron">
-    <p>@Model.VendorName Order Form</p>
+    <h2><u>@Model.VendorName Order Form</u></h2><br>
     <!--remove "orders" in form action for it to return to localhost:5000/vendors/1 or add "@Model.Id" after "order" to make it return to localhost:5000/vendors/1/orders/1 -->
     <form action= "/vendors/@Model.Id/orders" method= "post">
       <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">

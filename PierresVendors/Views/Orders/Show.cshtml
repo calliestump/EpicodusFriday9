@@ -3,12 +3,14 @@
 }
 <div class = "container">
   <div class = "jumbotron">
-    <h1>Order Details for @Model["vendor"].VendorName</h1>
-    <h2>@Model["order"].Title</h2>
-    <h2>@Model["order"].OrderDescription</h2>
-    <h2>@Model["order"].Price</h2>
-    <h2>@Model["order"].Date</h2><br>
-    <p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add another order for @Model["vendor"].VendorName</a><br></p>
+    <h1><u>Order Details for @Model["vendor"].VendorName</u></h1><br>
+    <h3><strong>Title:</strong> @Model["order"].Title</h3>
+    <h3><strong>Description:</strong> @Model["order"].OrderDescription</h3>
+    <h3><strong>Price:</strong> @Model["order"].Price</h3>
+    <h3><strong>Date:</strong> @Model["order"].Date</h3><br>
+
+    <p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add another order for @Model["vendor"].VendorName</a></p>
+    <!-- <p><a href='/vendors/{vendorId}'>Delete Order</a></p><br> -->
     <p><a href='/vendors'>View all Vendors</a></p>
     </div>
 </div>
